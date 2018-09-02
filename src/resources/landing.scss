@@ -1,0 +1,79 @@
+@import 'basic-styles.scss';
+@media only screen and (min-width: 500px){
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+    }
+    body{
+        margin:0;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4464ad+0,4a90e2+40,4a90e2+60,4a90e2+72,4464ad+100 */
+        background: $dark-blue;
+        background-image: linear-gradient(-45deg, $dark-blue 0%, $gradient-light-blue 40%, $gradient-light-blue 60%, $gradient-light-blue 72%, $dark-blue 100%);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        font-family: $main-font;
+    }
+    main{
+        display: flex;
+        justify-content: space-around;
+    }
+    h1{
+        font-size: 3.5vw;
+        color:$whitish;
+    }
+    .logo{
+        width: 15vw;
+        margin-bottom: 10vh;
+    }
+    .logo>img{
+        width: 100%;
+        margin: 3vh;
+    }
+    .call-to-action{
+        margin: auto 0;
+        text-align: center;
+        width: 50vw;
+    }
+    .buttons{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .buttons>button{
+        width: 18vw;
+        height: 5vw;
+        border-radius: 5px;
+        font-size: 2vw;
+        color:$whitish;
+    }
+    .sign-in{
+        border: 1px solid $whitish;
+        background-color: transparent;
+    }
+    .sign-up{
+        border:none;
+        background-color: $pink;
+    }
+    .sign-in:hover{
+        border: 1px solid $pink;
+        background-color: transparent;
+        color: $pink;
+    }
+    .sign-up:hover{
+        border:none;
+        background-color: $whitish;
+        color: $pink;
+    }
+    .hero-img{
+        width: 30vw;
+        margin-right: 5vw;
+    }
+    .hero-img>img{
+        width: 100%;
+    }
+}
